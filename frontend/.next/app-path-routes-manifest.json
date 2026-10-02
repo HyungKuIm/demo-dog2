@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/cart/api/items/[dogId]/route": "/cart/api/items/[dogId]",
+  "/cart/api/items/route": "/cart/api/items",
+  "/cart/api/route": "/cart/api",
+  "/cart/page": "/cart",
+  "/comments/[id]/route": "/comments/[id]",
+  "/comments/route": "/comments",
+  "/dogs/[id]/edit/page": "/dogs/[id]/edit",
+  "/dogs/[id]/page": "/dogs/[id]",
+  "/dogs/api/[id]/route": "/dogs/api/[id]",
+  "/dogs/api/route": "/dogs/api",
+  "/dogs/new/page": "/dogs/new",
+  "/dogs/page": "/dogs",
+  "/favicon.ico/route": "/favicon.ico",
+  "/hello/route": "/hello",
+  "/page": "/",
+  "/profile/api/route": "/profile/api",
+  "/profile/page": "/profile"
+}

@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/images/:path*",
+        "destination": "http://localhost:8080/images/:path*",
+        "regex": "^/images(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/cart/api/items/[dogId]",
+      "regex": "^/cart/api/items/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPdogId": "nxtPdogId"
+      },
+      "namedRegex": "^/cart/api/items/(?<nxtPdogId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/comments/[id]",
+      "regex": "^/comments/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/comments/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dogs/api/[id]",
+      "regex": "^/dogs/api/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dogs/api/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dogs/[id]",
+      "regex": "^/dogs/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dogs/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dogs/[id]/edit",
+      "regex": "^/dogs/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dogs/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/cart/api",
+      "regex": "^/cart/api(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart/api(?:/)?$"
+    },
+    {
+      "page": "/cart/api/items",
+      "regex": "^/cart/api/items(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart/api/items(?:/)?$"
+    },
+    {
+      "page": "/comments",
+      "regex": "^/comments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/comments(?:/)?$"
+    },
+    {
+      "page": "/dogs",
+      "regex": "^/dogs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dogs(?:/)?$"
+    },
+    {
+      "page": "/dogs/api",
+      "regex": "^/dogs/api(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dogs/api(?:/)?$"
+    },
+    {
+      "page": "/dogs/new",
+      "regex": "^/dogs/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dogs/new(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/hello",
+      "regex": "^/hello(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hello(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/profile/api",
+      "regex": "^/profile/api(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/api(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

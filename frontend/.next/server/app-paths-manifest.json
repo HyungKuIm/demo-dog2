@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/cart/api/items/[dogId]/route": "app/cart/api/items/[dogId]/route.js",
+  "/cart/api/items/route": "app/cart/api/items/route.js",
+  "/cart/api/route": "app/cart/api/route.js",
+  "/cart/page": "app/cart/page.js",
+  "/comments/[id]/route": "app/comments/[id]/route.js",
+  "/comments/route": "app/comments/route.js",
+  "/dogs/[id]/edit/page": "app/dogs/[id]/edit/page.js",
+  "/dogs/[id]/page": "app/dogs/[id]/page.js",
+  "/dogs/api/[id]/route": "app/dogs/api/[id]/route.js",
+  "/dogs/api/route": "app/dogs/api/route.js",
+  "/dogs/new/page": "app/dogs/new/page.js",
+  "/dogs/page": "app/dogs/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/hello/route": "app/hello/route.js",
+  "/page": "app/page.js",
+  "/profile/api/route": "app/profile/api/route.js",
+  "/profile/page": "app/profile/page.js"
+}
